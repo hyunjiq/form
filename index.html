@@ -42,11 +42,31 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- 커스터마이징 -->
+    <link rel="stylesheet" href="./css/common.min.css">
+    <link rel="stylesheet" href="./css/hj.min.css">
     <!-- 팀원들의 스타일 -->
 </head>
 <body>
     <!-- 공통컨텐츠 : header, footer, aside -->
-  
+    <form name="reservation" action="데이터처리파일경로" method="get">
+        <!-- <label for="name">성함:</label> -->
+        <div>
+            <input type="text" id="name" name="name" placeholder="성함" required>
+        </div>
+        <div>
+            <input type="text" name="ph[0]" placeholder="000" lang="3" required>
+            <input type="text" name="ph[1]" placeholder="0000" lang="4" required>
+            <input type="text" name="ph[2]" placeholder="0000" lang="4" required>
+            <!-- 정렬 -->
+        </div>
+        <div>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">남성</label><br>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">여성</label><br>
+            <!-- 라디오버튼은 네임이 똑같다 -->
+        </div>
+    </form>
 </body>
 </html>
 
